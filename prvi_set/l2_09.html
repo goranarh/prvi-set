@@ -1,0 +1,81 @@
+<DOCTYPE! html>
+<html>
+<head>
+<!-- l2, vjezba 9-->
+<meta charset="utf-8" />
+<meta name="description" content="vjezba" />
+<meta name="author" content="Gorana Stjepanovic" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zadaci</title>
+<style>
+body {
+    width: 80%;
+	margin-left: 10%;}
+input[type=text] {
+    width: 40%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid slategrey;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;}
+	
+	input[type=radio] {
+    padding: 15px;
+	margin: 5px 0 10px 0;}
+	
+	select{
+    margin: 10px 0 10px 0;}
+	textarea{
+    margin: 10px 0 10px 0;}
+	fieldset{
+    margin: 10px 0 10px 0;}
+	
+	
+	
+</style>
+
+</head>
+<body>
+<form action="/action_page.php">
+<fieldset>
+<legend>Lični podaci:</legend>
+Ime i prezime: <input type="text"><br>   
+<label for="musko">Muško</label>
+  <input type="radio" name="gender" id="musko" value="musko"><br>
+  <label for="zensko">Žensko</label>
+  <input type="radio" name="gender" id="zensko" value="zensko"><br>
+ <legend>Završena srednja škola</legend>
+ <select> 
+  <option value="elektrotehnička škola">Elektrotehnička škola</option>
+  <option value="gimnazija">Gimnazija</option>
+  <option value="ekonomska škola">Ekonomska škola</option>
+  <option value="drugo">drugo</option>
+</select> <br>
+<textarea rows="4" cols="50">
+</textarea><br>
+</fieldset>
+
+<fieldset>
+<legend>Znanja i vještine:</legend>
+<input type="checkbox" name="programski jezik" value="java" > Java<br>
+  <input type="checkbox" name="programski jezik" value="php" > PHP<br>
+  <input type="checkbox" name="programski jezik" value="c++" > C++<br>
+</fieldset>
+
+<fieldset>
+<legend>Podaci o zaposlenju:</legend>
+Naziv ustanove: <input type="text" ><br>
+Adresa ustanove: <input type="text" ><br>
+Službeni e-mail: <input type="text" ><br>
+</fieldset>
+<button type="submit" value="Submit">Pošalji podatke</button> 
+<button type="reset" value="Reset">Poništi</button>
+</form>
+
+</body>
+</html>
